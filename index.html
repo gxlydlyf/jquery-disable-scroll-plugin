@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Disable scroll</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=yes">
+    <style>
+        body, html {
+            overflow: hidden;
+        }
+
+        body, #div {
+            white-space: nowrap;
+        }
+
+        body{
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0;
+            left: 0;
+            margin: 0;
+        }
+
+        #div {
+            height: 100%;
+            width: 100%;
+            position: relative;
+            top: 0;
+            left: 0;
+            overflow: auto;
+            box-sizing: border-box;
+            margin: 0;
+        }
+
+        #control {
+            height: auto;
+            width: 100%;
+            position: absolute;
+            background-color: #808080;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            color: white;
+            white-space: normal;
+            text-align: center;
+            padding: 10px 0 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="control">
+    <span id="status">
+        <span id="status-x">horizontal: </span>
+        <span>&nbsp;</span>
+        <span id="status-y">vertical: </span>
+    </span>
+    <br>
+    <button class="control" data-change="all" data-status="true">enable all</button>
+    <button class="control" data-change="vertical" data-status="true">enable vertical</button>
+    <button class="control" data-change="horizontal" data-status="true">enable horizontal</button>
+    <button class="control" data-change="all" data-status="false">disable all</button>
+    <button class="control" data-change="vertical" data-status="false">disable vertical</button>
+    <button class="control" data-change="horizontal" data-status="false">disable horizontal</button>
+</div>
+<div style="" id="div">
+
+</div>
+<script src="jquery.1.7.0.js"></script>
+<!--<script src="https://code.jquery.com/jquery-1.0.1.js"></script>-->
+<!--<script src="/static/disable-scroll/jquery.1.0.js"></script>-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.7/jquery.min.js"></script>-->
+<script src="jquery.disable-scroll.min.js"></script>
+<script>
+    if (window.$) {
+        var div = $('#div');
+        var $statusX = $('#status-x');
+        var $statusY = $('#status-y');
+        var $status = $('#status');
+        var $control = $('.control');
+        var control_text = function (id) {
+            var lang = navigator.language || navigator['userLanguage'];
+            lang = String(lang).toLowerCase();
+            if (lang !== 'zh-cn') {
+                lang = 'en';
+            }
+            return {
+                'status': {
+                    'en': 'status',
+                    'zh-cn': '状态'
+                },
+                'disable': {
+                    'en': 'disable',
+                    'zh-cn': '禁用'
+                },
+                'enable': {
+                    'en': 'enable',
+                    'zh-cn': '启用'
+                },
+                'all': {
+                    'en': 'all',
+                    'zh-cn': '所有'
+                },
+                'vertical': {
+                    'en': 'vertical',
+                    'zh-cn': '垂直'
+                },
+                'horizontal': {
+                    'en': 'horizontal',
+                    'zh-cn': '水平'
+                }
+            }[id][lang];
+        };
+        var transcribe = {'true': 'enable', 'false': 'disable'};
+        $status.click(function () {
+            var status = div.disableScrollStatus();
+            $statusX.text(control_text('horizontal') + ': ' + control_text(transcribe[String(status.x)]));
+            $statusY.text(control_text('vertical') + ': ' + control_text(transcribe[String(status.y)]));
+        });
+        $control.on('click', function () {
+            var $element = $(this);
+            // console.log($element.data('status'), $element.data('change'))
+            div.controlScroll($element.data('status'), $element.data('change'));
+            $status.click();
+        });
+
+        $control.each(function () {
+            var $element = $(this);
+            $element.text(
+                control_text(transcribe[$element.data('status')]) +
+                ' ' +
+                control_text($element.data('change'))
+            );
+        });
+        $status.click();
+        // /*
+        var number = 0;
+        $.each(Array(40), function () {
+            var content = '';
+            $.each(Array(100), function () {
+                content += number + '-';
+                number += 1;
+            });
+            div.append("<p>" + content + "</p>");
+        });
+        // */
+    }
+</script>
+</body>
+</html>
