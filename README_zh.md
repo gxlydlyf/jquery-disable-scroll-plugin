@@ -4,8 +4,8 @@
 |
 **[English](https://github.com/gxlydlyf/jquery-disable-scroll-plugin/blob/main/README.md)**
 
-
 * [jQuery禁用滚动插件](#jquery禁用滚动插件)
+* [依赖](#依赖)
 * [使用方法](#使用方法)
 	* [禁用/启用 滚动](#禁用启用-滚动)
 		* [x和y](#x和y)
@@ -15,8 +15,15 @@
 		* [获取禁用状态](#获取禁用状态)
 * [别名](#别名)
 * [演示](#演示)
+* [兼容性](#兼容性)
+* [建议与问题](#建议与问题)
 
 这个插件可以禁用页面滚动功能，且不隐藏滚动条
+
+# 依赖
+
+必须先安装[jQuery](https://jquery.com/)
+至少需要1.7.0版本
 
 # 使用方法
 
@@ -113,6 +120,15 @@ false为禁用状态，true为启用状态
 | EnableScroll  |    onScroll<br/>OnScrolll<br/>onscrolll<br/>on_scrolll<br/>enableScrolll<br/>enable_scrolll<br/>EnableScrolll<br/>enablescroll    |
 
 # 演示
+
 下载项目之后打开**index.html**文件可以查看效果
 或
 [在此在线查看](https://gxlydlyf.github.io/jquery-disable-scroll-plugin/index.html)
+
+# 兼容性
+
+理论上可以兼容所有
+
+# 建议与问题
+
+均可以在[issues](https://github.com/gxlydlyf/jquery-disable-scroll-plugin/issues)提出

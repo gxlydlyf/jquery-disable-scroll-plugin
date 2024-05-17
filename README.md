@@ -5,17 +5,25 @@
 **[English](https://github.com/gxlydlyf/jquery-disable-scroll-plugin/blob/main/README.md)**
 
 * [jQuery Disable Scroll Plugin](#jquery-disable-scroll-plugin)
+* [Dependencies](#dependencies)
 * [Usage](#usage)
 	* [Disable/Enable Scrolling](#disableenable-scrolling)
 		* [x and y](#x-and-y)
 		* [x or y](#x-or-y)
 		* [Application with IDs](#application-with-ids)
-			* [Get All IDs](#get-all-ids)
+			* [Get all IDs](#get-all-ids)
 		* [Get Disable Status](#get-disable-status)
 * [Aliases](#aliases)
 * [Demo](#demo)
+* [Compatibility](#compatibility)
+* [Suggestions and Issues](#suggestions-and-issues)
 
-This plugin allows you to disable the scrolling functionality of a page without hiding the scrollbars.
+This plugin can disable the scrolling functionality of a page without hiding the scroll bar.
+
+# Dependencies
+
+You must have [jQuery](https://jquery.com/) installed.
+At least version 1.7.0 is required.
 
 # Usage
 
@@ -51,8 +59,8 @@ $element.ControlScroll(false, "all");
 
 ```javascript
 var direction;
-direction = "x"; // When setting x
-direction = "y"; // When setting y
+direction = "x"; // When x needs to be set
+direction = "y"; // When y needs to be set
 
 // Enable scrolling, choose one of the following ways
 $element.EnableScroll(direction);
@@ -66,10 +74,10 @@ $element.ControlScroll(false, direction);
 ### Application with IDs
 
 ```javascript
-$element.ControlScroll(false, "x", "id_name"); // Disable x-axis, with ID "id_name"
+$element.ControlScroll(false, "x", "id_name"); // Disable x-axis with ID "id_name"
 ```
 
-#### Get All IDs
+#### Get all IDs
 
 ```javascript
 $element.disableScrollId(); // Returns an object
@@ -94,7 +102,7 @@ $element.disableScrollId(); // Returns an object
 $element.disableScrollStatus(); // Returns an object
 ```
 
-False indicates disabled status, true indicates enabled status
+false indicates disabled status, true indicates enabled status
 
 ```json
 {
@@ -105,14 +113,22 @@ False indicates disabled status, true indicates enabled status
 
 # Aliases
 
-| Original Name |                                                              Aliases                                                              |
-|:-------------:|:---------------------------------------------------------------------------------------------------------------------------------:|
-| ControlScroll | ctrlScrool<br/>CtrlScroll<br/>ctrlscroll<br/>ctrl_scroll<br/>controlScroll<br/>control_scroll<br/>ControlScroll<br/>controlscroll |
-| DisableScroll |   offScrool<br/>OffScroll<br/>offscroll<br/>off_scroll<br/>disableScroll<br/>disable_scroll<br/>DisableScroll<br/>disablescroll   |
-| EnableScroll  |    onScroll<br/>OnScrolll<br/>onscrolll<br/>on_scrolll<br/>enableScrolll<br/>enable_scrolll<br/>EnableScrolll<br/>enablescroll    |
+|    Original Name    |                                                                      Aliases                                                                      |
+|:-------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------:|
+|    ControlScroll    | ctrlScrool<br/>CtrlScroll<br/>ctrlscroll<br/>ctrl_scroll<br/>controlScroll<br/>control_scroll<br/>ControlScroll<br/>controlscroll               |
+|   DisableScroll     |   offScrool<br/>OffScroll<br/>offscroll<br/>off_scroll<br/>disableScroll<br/>disable_scroll<br/>DisableScroll<br/>disablescroll                 |
+|    EnableScroll     |    onScroll<br/>OnScrolll<br/>onscrolll<br/>on_scrolll<br/>enableScrolll<br/>enable_scrolll<br/>EnableScrolll<br/>enablescroll                |
 
 # Demo
 
-After downloading the project, open the **index.html** file to see the effect
+After downloading the project, open the **index.html** file to see the effects
 or
 [View it online here](https://gxlydlyf.github.io/jquery-disable-scroll-plugin/index.html)
+
+# Compatibility
+
+Theoretically compatible with all browsers.
+
+# Suggestions and Issues
+
+Suggestions and issues can be raised in the [issues](https://github.com/gxlydlyf/jquery-disable-scroll-plugin/issues) section.
