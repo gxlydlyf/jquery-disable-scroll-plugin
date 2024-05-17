@@ -1,6 +1,6 @@
 {
   "name": "jquery-disable-scroll-plugin",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Disable scroll bar scrolling effect, compatible with other custom scroll bar plugins",
   "main": "jquery.disable-scroll.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/gxlydlyf/jquery-plugin-disable-scroll.git"
+    "url": "git+https://github.com/gxlydlyf/jquery-disable-scroll-plugin.git"
   },
   "keywords": [
     "scroll",
@@ -23,9 +23,9 @@
   "license": "MIT",
   "licenseUrl": "https://opensource.org/licenses/MIT",
   "bugs": {
-    "url": "https://github.com/gxlydlyf/jquery-plugin-disable-scroll/issues"
+    "url": "https://github.com/gxlydlyf/jquery-disable-scroll-plugin/issues"
   },
-  "homepage": "https://github.com/gxlydlyf/jquery-plugin-disable-scroll#readme",
+  "homepage": "https://github.com/gxlydlyf/jquery-disable-scroll-plugin#readme",
   "dependencies": {
     "jquery": ">=1.7.0"
   },
