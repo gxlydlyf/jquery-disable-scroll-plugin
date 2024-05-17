@@ -1,5 +1,9 @@
 # JSDOC
 
+**[中文](https://github.com/gxlydlyf/jquery-disable-scroll-plugin/blob/main/JSDOC/JSDOC_zh.md)**
+|
+**[English](https://github.com/gxlydlyf/jquery-disable-scroll-plugin/blob/main/JSDOC/JSDOC.md)**
+
 ## ControlScroll
 
 控制滚动函数，用于设置滚动状态、方向和ID。
