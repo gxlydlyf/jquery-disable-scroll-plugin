@@ -379,6 +379,10 @@ $element.newEnable();//等同于原先$element.EnableScroll();
 
 理论上可以兼容所有浏览器
 
+# 讨论
+
+[访问论坛](https://github.com/gxlydlyf/jquery-disable-scroll-plugin/discussions)
+
 # 建议与问题
 
 均可以在[issues](https://github.com/gxlydlyf/jquery-disable-scroll-plugin/issues)提出
