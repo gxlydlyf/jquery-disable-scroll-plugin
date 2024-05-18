@@ -10,7 +10,7 @@
         $ = ($);
     }
 
-    var version = '1.0.2';
+    var version = '1.0.1';
     var plugin = function () {
         return {
             version: version
@@ -681,13 +681,13 @@
         };
 
         var cc = {};//code_completion
-        cc.ctrlScrol = cc.CtrlScroll = cc.ctrlscroll = cc.ctrl_scroll =
-            cc.controlScroll = cc.control_scroll = cc.ControlScroll = cc.controlscroll = ControlScroll;
+        cc.ctrlScrol = cc.CtrlScroll = cc.ctrlscroll = cc.ctrl_scroll = cc.Ctrl_scroll =
+            cc.controlScroll = cc.control_scroll = cc.Control_scroll = cc.ControlScroll = cc.controlscroll = ControlScroll;
 
-        cc.offScrol = cc.OffScroll = cc.offscroll = cc.off_scroll =
-            cc.disableScroll = cc.disable_scroll = cc.DisableScroll = cc.disablescroll = DisableScroll;
+        cc.offScrol = cc.OffScroll = cc.offscroll = cc.off_scroll = cc.Off_scroll =
+            cc.disableScroll = cc.disable_scroll = cc.Disable_scroll = cc.DisableScroll = cc.disablescroll = DisableScroll;
 
-        cc.onScrol = cc.OnScroll = cc.onscroll = cc.on_scroll =
-            cc.enableScroll = cc.enable_scroll = cc.EnableScroll = cc.enablescroll = EnableScroll;
+        cc.onScrol = cc.OnScroll = cc.onscroll = cc.on_scroll = cc.On_scroll =
+            cc.enableScroll = cc.enable_scroll = cc.Eenable_scroll = cc.EnableScroll = cc.enablescroll = EnableScroll;
     })();
 })(window.jQuery);
