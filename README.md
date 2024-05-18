@@ -379,6 +379,10 @@ or
 
 The plugin is theoretically compatible with all browsers.
 
+# discuss
+
+[Visit the forum](https://github.com/gxlydlyf/jquery-disable-scroll-plugin/discussions)
+
 # Suggestions and Issues
 
 Feel free to raise any suggestions or issues on [GitHub Issues](https://github.com/gxlydlyf/jquery-disable-scroll-plugin/issues)
