@@ -1,6 +1,6 @@
 {
   "name": "jquery-disable-scroll-plugin",
-  "version": "1.0.1",
+  "version": "1.0.1-release",
   "description": "Disable scroll bar scrolling effect, compatible with other custom scroll bar plugins",
   "main": "jquery.disable-scroll.js",
   "scripts": {
